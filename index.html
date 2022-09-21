@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="swiper.css" />
+
+    <title>Document</title>
+    <style>
+      .price {
+        text-align: center;
+      }
+      .car2 {
+        text-align: center;
+      }
+      #vehicles {
+        /* height: 70vh; */
+      }
+      .swiper .car-img {
+        opacity: 0.5;
+      }
+      .swiper {
+        /* color: white; */
+      }
+      /* .swiper */
+      /* .swiper{ */
+      /* opacity: 0.5; */
+      /* } */
+      /* .swiper-active{ */
+      /* opacity: 10; */
+      /* } */
+      .content {
+        transform: scale(0);
+      }
+
+      .swiper-slide-active .car-img {
+        opacity: 1;
+      }
+      .swiper-slide-active {
+        /* color: black; */
+      }
+      .swiper-slide-active .content {
+        transform: scale(1);
+      }
+      .swiper-slide-active .rr {
+        box-shadow: 0px -1px 10px 1px gray;
+        opacity: 1;
+      }
+      .rr {
+        opacity: 0.5;
+        height: 40vh;
+        padding-top: 32px;
+      }
+      .r-box1 {
+        margin: 20px 0;
+      }
+      .r-box2 {
+        margin: 20px 0;
+      }
+      .r-box3 {
+        margin: 20px 0;
+      }
+      .r-box4 {
+        margin: 20px 0;
+      }
+      .r-box5 {
+        margin: 20px 0;
+      }
+      .r-box6 {
+        margin: 20px 0;
+      }
+      .r-h {
+        font-weight: bold;
+        font-size: 29px;
+        /* margin-top: 14px; */
+      }
+      .r-paragraph {
+        margin: 14px auto;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: rgb(235, 223, 53);
+      }
+      .fa-star-half-stroke {
+        color: rgb(235, 223, 53);
+      }
+      .fa-star {
+        color: rgb(235, 223, 53);
+      }
+      .f-car-p{
+        font-weight: bold;
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .f-car-price-p{
+        font-size: 24px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- default font
+    Times New Roman -->
+    <nav class="navbar">
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <i class="fa-solid fa-xmark ll"></i>
+      <!-- <span><i class="fa-solid fa-xmark" style="display: none;"></i></span> -->
+      <li class="head">
+        <span class="max">Max</span><span class="wheels">Wheels</span>
+      </li>
+      <ul class="u">
+        <li class="li"><a href="#">Home</a></li>
+        <li class="li"><a href="#v">Vehicles</a></li>
+        <li class="li"><a href="#s">Services</a></li>
+        <li class="li"><a href="#f">Featured</a></li>
+        <li class="li"><a href="#r">Reviews</a></li>
+        <li class="li"><a href="#cont">Contact</a></li>
+        <!-- <i class="fa-solid fa-house"></i> -->
+      </ul>
+      <button class="login-btn" >Login</button>
+      <i class="fa-solid fa-user hh"></i>
+    </nav>
+    <main id="">
+      <div id="home">
+        <p class="home-p">FIND YOUR CAR</p>
+        <div class="ima">
+          <img src="th (1).jpg" alt="" class="ttt" />
+          <img src="th.jpg" alt="" style="margin: 0 -11px" class="ttt" />
+          <img src="th (2).jpg" alt="" class="ttt" />
+        </div>
+        <!-- <div class="bu"> -->
+          <!-- <form action="explore.html"> -->
+            <button class="explore-btn" style="margin:16px auto 0px auto; display: flex;">Explore Cars</button>
+          <!-- </form> -->
+        <!-- </div> -->
+      </div>
+      <div id="branches">
+        <div class="box1">
+          <i class="fa-solid fa-house-chimney"></i>
+          <p class="bran">
+            <span class="span">150+</span> <br /><span class="span2"
+              >Branches</span
+            >
+          </p>
+          <!-- <br> -->
+          <!-- <p class="bran2">Branches</p> -->
+        </div>
+        <div class="box2">
+          <i class="fa-solid fa-car"></i>
+          <p class="bran">
+            <span class="span">4770+</span> <br /><span class="span2"
+              >Cars Sold</span
+            >
+          </p>
+        </div>
+        <div class="box3">
+          <i class="fa-solid fa-user"></i>
+          <p class="bran">
+            <span class="span">320+</span> <br /><span class="span2"
+              >Happy Clients</span
+            >
+          </p>
+        </div>
+        <div class="box4">
+          <i class="fa-solid fa-car"></i>
+          <p class="bran">
+            <span class="span">1500+</span> <br /><span class="span2"
+              >New Cars</span
+            >
+          </p>
+        </div>
+      </div>
+      <div id="v"></div>
+      <br />
+      <br />
+      <!-- <br> -->
+      <br />
+      <br />
+      <br />
+      <div id="vehicles">
+        <p class="services-p">Popular Vehicles</p>
+        <hr class="h3" />
+        <div class="swiper mySwiper">
+          <div class="cars swiper-wrapper">
+            <div class="car1 swiper-slide">
+              <img src="index2.jpg" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$62,000/-</span></p>
+                <br />
+                <!-- <p class="hg">New</p>
+              <p class="hg">2021</p>
+              <p class="hg">Automatic</p>
+              <p class="hg">Petrol</p>
+              <p class="hg">183mph</p> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+            <div class="car2 swiper-slide">
+              <img src="brown-mercedes-benz-gle-coupe-front-view-car-png-image-29.png" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$70,000/-</span></p>
+                <br />
+                <!-- <ul class="uu"> -->
+                <!-- <p class="hg">New</p>
+              <p class="hg">2021</p>
+              <p class="hg">Automatic</p>
+              <p class="hg">Petrol</p>
+              <p class="hg">190mph</p> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+            <div class="car3 swiper-slide">
+              <img src="th (1).jpg" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$50,000/-</span></p>
+                <br />
+                <!-- <ul class="uu"> -->
+                <!-- <p class="hg">New</p>
+              <p class="hg">2021</p>
+              <p class="hg">Automatic</p>
+              <p class="hg">Petrol</p>
+              <p class="hg">150mph</p> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+            <div class="car4 swiper-slide">
+              <img src="car-front-png-28.png" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$55,000/-</span></p>
+                <br />
+                <!-- <ul class="uu"> -->
+                <!-- <p class="hg">New</p>
+              <p class="hg">2021</p>
+              <p class="hg">Automatic</p>
+              <p class="hg">Petrol</p>
+              <p class="hg">180mph</p> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+            <div class="car5 swiper-slide">
+              <img src="th.jpg" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$90,000/-</span></p>
+                <br />
+                <!-- <ul class="uu"> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+            <div class="car6 swiper-slide">
+              <img src="index7.jpg" alt="" class="car-img">
+              <div class="content">
+                <p class="car-p">New Model</p>
+                <br />
+                <p class="price">Price: <span class="rupes">$50,000/-</span></p>
+                <br />
+                <!-- <ul class="uu"> -->
+                <!-- <p class="hg">New best modal</p>
+              <p class="hg">Since 2021</p>
+              <p class="hg">Fully Automatic</p>
+              <p class="hg">Petrol and CNG</p>
+              <p class="hg">Milag 140mph</p> -->
+                <p class="hg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  nisi harum hic magnam illum suscipit ducimus placeat, eaque
+                  laudantium fugiat ut nemo cumque quibusdam ab odio sunt minima
+                  accusamus ratione
+                </p>
+                <br />
+                <button class="check-btn">Check Out</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination"
+            style="top: 98vh; position: static; margin-top: -18px"
+          ></div>
+        </div>
+      </div>
+      <div id="s"></div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id="services">
+        <p class="services-p">Our Services</p>
+        <hr class="h" />
+        <div class="boxes">
+          <div class="boxa">
+            <i class="fa-solid fa-car"></i>
+            <p class="p">Car Selling</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+          <div class="boxb">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <p class="p">Parts Repair</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+          <div class="boxc">
+            <i class="fa-solid fa-car-burst"></i>
+            <p class="p">Car Insurance</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+          <div class="boxd">
+            <i class="fa-solid fa-car-battery"></i>
+            <p class="p">Battery Replacement</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+          <div class="boxe">
+            <i class="fa-solid fa-gas-pump"></i>
+            <p class="p">Oil Change</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+          <div class="boxf">
+            <i class="fa-solid fa-headset"></i>
+            <p class="p">24/7 Support</p>
+            <p class="y" style="margin: 15px 0">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit In deserunt
+            </p>
+            <button class="more">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div id="f"></div>
+      <br>
+      <br>
+      <br>
+      <div id="featured">
+        <p class="services-p" style="margin-top: 30px;">Featured Cars</p>
+        <hr class="h">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="f-car1 swiper-slide">
+              <img src="f-car1.jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car2 swiper-slide">
+              <img src="f-car2.png" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car3 swiper-slide">
+              <img src="index2.jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car4 swiper-slide">
+              <img src="f-car4.jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+          </div>
+          <div class="swiper-pagination" style="position: static; margin-bottom: -1px; margin-top: 26px;"></div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="f-car5 swiper-slide">
+              <img src="f-car5.png" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car6 swiper-slide">
+              <img src="th (2).jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car7 swiper-slide">
+              <img src="f-car7.jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+            <div class="f-car8 swiper-slide">
+              <img src="f-car8.jpg" alt="" />
+              <p class="f-car-p">New Modal</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <p class="f-car-price-p">$55,000/-</p>
+              <button class="check-btn">Check Out</button>
+            </div>
+          </div>
+          <div class="swiper-pagination" style="position: static; margin: 26px 0;"></div>
+        </div>
+      </div>
+      <div id="subscribe">
+        <div class="sub">
+          <p class="subscribe-heading">Subscribe For Latest Updates</p>
+          <p class="subscribe-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, porro
+          </p>
+          <input
+            type="text"
+            class="sub-input"
+            placeholder="enter your email"
+          /><button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+      <div id="r"></div>
+      <br>
+      <br>
+      <div id="reviews">
+        <p class="j" style="margin-top: 53px">Client's Review</p>
+        <hr class="h" />
+        <div class="reviews-box swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="r-box1 swiper-slide" style="width: auto">
+              <div class="rr">
+                <img src="r-profile1.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="r-box2 swiper-slide">
+              <div class="rr">
+                <img src="r-profile2.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="r-box3 swiper-slide">
+              <div class="rr">
+                <img src="r-profile3.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="r-box4 swiper-slide">
+              <div class="rr">
+                <img src="r-profile4.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="r-box5 swiper-slide">
+              <div class="rr">
+                <img src="r-profile5.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="r-box6 swiper-slide">
+              <div class="rr">
+                <img src="r-profile6.jpg" alt="" class="r-image" />
+                <p class="r-paragraph">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+                  officia aperiam iure laborum rem pariatur, accusantium natus
+                  exercitationem perspiciatis et ad ducimus. Ipsa in dolorem
+                  earum voluptatem laudantium error perferendis!
+                </p>
+                <p class="r-h">John Deo</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination"
+            style="top: 98vh; position: static"
+          ></div>
+        </div>
+      </div>
+      <div id="cont"></div>
+      <br>
+      <div id="contact">
+        <p class="c-p">Contact Us</p>
+        <hr class="h2" />
+        <div class="con">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26491.61892221028!2d73.37843683167178!3d33.90375523037826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfd715776097a9%3A0x17b2e1d6bfb8e190!2sMurree%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1663364374247!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="c-form">
+            <p class="c">Get In Touch</p>
+            <form action="/" class="contact-form" onsubmit="return pp()">
+              <input
+                type="text"
+                placeholder="your name"
+                class="name"
+                required
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="your email"
+                class="ema"
+                required
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="subject"
+                class="subject"
+                required
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="your message"
+                class="message"
+                required
+              />
+              <button class="send-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <!-- <div class="form"> -->
+        <!-- <form action=""> -->
+
+        <span><i class="fa-solid fa-xmark bl"></i></span>
+        <br />
+        <div class="container">
+          <p class="home-p2">USER LOGIN</p>
+          <form action="/">
+            <input type="email" placeholder="Email" class="email" required />
+            <br />
+            <input
+              type="password"
+              placeholder="Password"
+              class="password"
+              required
+            />
+            <br />
+            <p class="forget">
+              Forget Your Password
+              <a class="click" href="/">Click Here</a>
+            </p>
+            <button class="ln">Login</button>
+          </form>
+          <p class="forget">Or Login with</p>
+          <form
+            class="fo"
+            action="https://accounts.google.com/gsi/select?client_id=92879692782-7nd751eusg5fep81a1vhm0r6hf0pdn54.apps.googleusercontent.com&ux_mode=popup&ui_mode=card&as=%2FVmrKMyUJ6nq9OdHOKLn7A&channel_id=aec1d733f453342f767be39cef75ac49f335c65475432fe3a453fef2e633b12e&origin=https%3A%2F%2Fwww.Signup.com"
+          >
+            <button class="google-btn">Google</button>
+          </form>
+          <form action="https://www.facebook.com" class="fo">
+            <button class="facebook-btn">Facebook</button>
+          </form>
+          <p class="forget">
+            Don't Have An Account
+            <a class="click" href="signup.html">Create One</a>
+          </p>
+          <!-- <button class="ln">d</button> -->
+        </div>
+        <!-- </form> -->
+        <!-- </div> -->
+      </div>
+    </main>
+    <footer>
+      <div id="links">
+        <div class="link1">
+          <p class="p2">Our Branches</p>
+          <span
+            ><i class="fa-solid fa-location-dot kk"></i>
+            <p class="contry">Pakistan</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-location-dot"></i>
+            <p class="contry">Japan</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-location-dot"></i>
+            <p class="contry">France</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-location-dot"></i>
+            <p class="contry">Russia</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-location-dot"></i>
+            <p class="contry">USA</p></span
+          >
+        </div>
+        <div class="link2">
+          <p class="p2">Quick Links</p>
+          <span
+            ><i class="fa-solid fa-arrow-right kk"></i>
+            <p class="contry">Home</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-arrow-right"></i>
+            <p class="contry">Vehicles</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-arrow-right"></i>
+            <p class="contry">Services</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-arrow-right"></i>
+            <p class="contry">Featured</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-arrow-right"></i>
+            <p class="contry">Reviews</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-arrow-right"></i>
+            <p class="contry">Contact</p></span
+          >
+        </div>
+        <div class="link3">
+          <p class="p2">Contact Info</p>
+          <span
+            ><i class="fa-solid fa-phone-flip kk"></i>
+            <p class="contry">+123-456-7890</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-phone-flip"></i>
+            <p class="contry">+111-222-3333</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-envelope"></i>
+            <p class="contry">shahzaib@gmail.com</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-solid fa-location-dot"></i>
+            <p class="contry">Karachi,pakistan - 8007</p></span
+          >
+        </div>
+        <div class="link4">
+          <p class="p2">Contact Info</p>
+          <span
+            ><i class="fa-brands fa-facebook-f kk"></i>
+            <p class="contry">Facebook</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-brands fa-twitter"></i>
+            <p class="contry">Twitter</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-brands fa-instagram"></i>
+            <p class="contry">Instagram</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-brands fa-linkedin"></i>
+            <p class="contry">Linkedin</p></span
+          >
+          <br />
+          <span
+            ><i class="fa-brands fa-pinterest"></i>
+            <p class="contry">Pinterest</p></span
+          >
+        </div>
+      </div>
+      <br />
+      <hr />
+      <p class="he">Created By M.Shahzaib | All Rights Reserved</p>
+    </footer>
+  </body>
+  <script src="g.js"></script>
+  <script src="fontawesom.js"></script>
+  <script src="swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 10,
+      // centered  true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          // spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 2,
+          // spaceBetween: 40,
+        },
+        1000: {
+          slidesPerView: 3,
+          // spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</html>
