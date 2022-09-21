@@ -1,0 +1,177 @@
+#reviews .swiper{
+    margin: 0 103px;
+}
+@media(max-width:558px){
+
+    .sub-input{
+        width: 66vw;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .subscribe-heading{
+        font-size: 6vw
+    }
+    .subscribe-btn{
+        /* width: 22vw; */
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    .sub{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .subscribe-p{
+        text-align: center;
+    }
+
+
+}
+@media(max-width:915px){
+    #reviews .swiper{
+      margin: 0 0;
+    }
+}
+@media(max-width:940px){
+    .r-paragraph{
+        width: 242px;
+    }
+}
+@media(max-width:500px){
+    #featured .swiper{
+     padding: 0 10px;
+    }
+    #reviews .swiper{
+        padding: 0 10px;
+    }
+}
+@media(max-width:460px){
+    .services-p{
+        font-size: 43px;
+    }
+    .j{
+        font-size: 43px;
+    }
+}
+@media(max-width:390px){
+    .services-p{
+        font-size: 10vw;
+    }
+    .j{
+        font-size: 10vw;
+    }
+    .c-p{
+        font-size: 10vw;
+    }
+}
+@media(max-width:280px){
+    .home-p{
+        font-size: 10vw;
+    }
+}
+@media(max-width:371px){
+    .p{
+        font-size: 8vw;
+    }
+    .y{
+        font-size: 5vw;
+        color: black;
+        /* width: 81vw; */
+    }
+}
+@media(max-width:293px){
+    .r-paragraph{
+        font-size: 5vw;
+        width: auto;
+    }
+}
+@media(max-width:786px){
+    .f-car1 i{
+        font-size: 15px
+    }
+    .f-car2 i{
+        font-size: 15px
+}
+.f-car3 i{
+    font-size: 15px
+}
+.f-car4 i{
+    font-size: 15px
+}
+.f-car5 i{
+    font-size: 15px
+}
+.f-car6 i{
+    font-size: 15px
+}
+.f-car7 i{
+    font-size: 15px
+}
+.f-car8 i{
+    font-size: 15px
+}
+.r-box1 i{
+    font-size: 15px
+}
+.r-box2 i{
+    font-size: 15px
+}
+.r-box3 i{
+    font-size: 15px
+}
+.r-box4 i{
+    font-size: 15px
+}
+.r-box5 i{
+    font-size: 15px
+}
+.r-box6 i{
+    font-size: 15px
+}
+.r-box7 i{
+    font-size: 15px
+}
+.r-box8 i{
+    font-size: 15px
+}
+}
+@media(max-width:185px){
+    .r-h{
+        font-size: auto;
+    }
+}
+@media(max-width:305px){
+    .c{
+        font-size: 10vw;
+    }
+}
+.navbar .ll{
+    /* right: 0; */
+    position: absolute;
+    display: none;
+    left: 17px;
+font-size: 35px;
+}
+@media(max-width:786px){
+   /* .navbar .ll{
+        /* display: block; */
+    .bu{
+        display: none;
+
+    }
+    .cr{
+        display: block;
+    }
+    
+}
+.burger{
+    transition: all 0.3s ease;
+}
+.blue{
+    /* color: rgb(199, 199, 199); */
+}
+.expolore-btn{
+   margin: 16px auto 0 auto;
+   display: flex;
+}
