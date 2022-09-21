@@ -1,0 +1,312 @@
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  form {
+    background-color: white;
+    text-align: center;
+    /* margin: 10px ; */
+  }
+  /* label{
+      margin-top: 30px;
+  } */
+  .name {
+    padding-top: 50px;
+    margin-top: 10px;
+  }
+  svg {
+    width: 26px;
+    position: relative;
+    top: 1px;
+  }
+  .google-p {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 5px;
+  }
+  .google {
+    position: relative;
+    top: 220px;
+    right: 0px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  .po {
+    background: none;
+  }
+  #fo {
+    position: fixed;
+    height: 500px;
+    width: 28vw;
+    /* display: inline grid; */
+  }
+  .nam {
+    margin-bottom: 9px;
+    /* margin-top: 10px; */
+    text-align: center;
+    width: 25vw;
+    height: 5vh;
+    font-size: 14px;
+  }
+  .usernam {
+    margin-bottom: 9px;
+    /* margin-top: 10px; */
+    text-align: center;
+    width: 25vw;
+    height: 5vh;
+    font-size: 14px;
+  }
+  .passwor {
+    margin-bottom: 9px;
+    /* margin-top: 10px; */
+    text-align: center;
+    width: 25vw;
+    height: 5vh;
+    font-size: 14px;
+  }
+  .c-passwor {
+    text-align: center;
+    margin-bottom: 9px;
+    /* margin-top: 10px; */
+    width: 25vw;
+    height: 5vh;
+    font-size: 14px;
+  }
+  #s {
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    color: blue;
+  }
+  .selec {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .username {
+    font-size: 17px;
+  }
+  .password {
+    font-size: 17px;
+  }
+  .confirm-password {
+    font-size: 17px;
+  }
+  .male {
+    line-height: 37px;
+    cursor: pointer;
+  }
+  .female {
+    line-height: 37px;
+    cursor: pointer;
+  }
+  .prefer {
+    line-height: 37px;
+    cursor: pointer;
+  }
+  #male {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #female {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #prefer {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .create-btn {
+    width: 128px;
+    height: 24px;
+    color: white;
+    background-color: blue;
+    border: blue;
+    /* display: flex block; */
+    /* align-items: center; */
+    padding-bottom: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .L {
+    color: black;
+  }
+  @media (max-width: 1540px) {
+    #fo {
+      width: 56vw;
+      background-color: white;
+      height: 541px;
+    }
+    .google {
+      top: 237px;
+    }
+    .nam {
+      width: 44vw;
+    }
+    .usernam {
+      width: 44vw;
+    }
+    .passwor {
+      width: 44vw;
+    }
+    .c-passwor {
+      width: 44vw;
+    }
+  }
+  @media (max-width: 672px) {
+    #fo {
+      width: 56vw;
+    }
+    .nam {
+      width: 44vw;
+    }
+    .usernam {
+      width: 44vw;
+    }
+    .passwor {
+      width: 44vw;
+    }
+    .c-passwor {
+      width: 44vw;
+    }
+  }
+  @media (max-width: 412px) {
+    #fo {
+      width: 80vw;
+      /* background-color: red; */
+      height: 556px;
+    }
+    .nam {
+      width: 59vw;
+      height: 3vh;
+    }
+  
+    .usernam {
+      width: 59vw;
+      height: 3vh;
+    }
+    .passwor {
+      width: 59vw;
+      height: 3vh;
+    }
+    .c-passwor {
+      width: 59vw;
+      height: 3vh;
+    }
+  }
+  @media (max-width: 600px) {
+    #fo {
+      width: 68vw;
+      /* background-color:brown; */
+      height: 475px;
+    }
+    .nam {
+      width: 44vw;
+      height: 3vh;
+    }
+  
+    .usernam {
+      width: 44vw;
+      height: 3vh;
+    }
+    .passwor {
+      width: 44vw;
+      height: 3vh;
+    }
+    .c-passwor {
+      width: 44vw;
+      height: 3vh;
+    }
+    .google {
+      top: 195px;
+    }
+  }
+  @media (max-width: 430px) {
+    #fo {
+      width: 75vw;
+      background-color: white;
+      height: 545px;
+    }
+    .male {
+      display: block;
+    }
+    .female {
+      display: block;
+    }
+    .prefer {
+      display: block;
+    }
+    .google {
+      top: 238px;
+    }
+    .create-btn {
+      position: relative;
+      bottom: 8px;
+    }
+  }
+  @media (max-width: 368px) {
+    #fo {
+      background-color: white;
+    }
+    .nam {
+      width: 59vw;
+    }
+    .usernam {
+      width: 59vw;
+    }
+    .passwor {
+      width: 59vw;
+    }
+    .c-passwor {
+      width: 59vw;
+    }
+  }
+  @media (max-width: 302px) {
+    .nam {
+      font-size: 11px;
+      /* color: blue; */
+    }
+    .usernam {
+      font-size: 11px;
+      /* color: blue; */
+    }
+    .passwor {
+      font-size: 11px;
+      /* color: blue; */
+    }
+    .c-passwor {
+      font-size: 11px;
+      /* color: blue; */
+    }
+  }
+  /* @media(max-width:810px){
+      .nam{
+          height: 4vh;
+      }
+      .usernam{
+          height: 4vh;
+      }
+      .passwor{
+          height: 4vh;
+      }
+      .c-passwor{
+          height: 4vh;
+      }
+  } */
+  @media (max-width: 390px) {
+    .login-btn {
+      margin-right: 44vw;
+      margin-left: auto;
+      margin-bottom: 6px;
+    }
+  }
+  
