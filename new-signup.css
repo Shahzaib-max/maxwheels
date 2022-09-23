@@ -174,7 +174,7 @@ input{
     width: 75vw;
     margin: ;
     /* text-align: c; */
-    margin: 20px auto 0 auto;
+    margin: 0px auto 0 auto;
     padding: 0 16px;
   
     }
@@ -185,6 +185,7 @@ input{
         /* text-align: c; */
         margin: 0 auto;
         padding: 0 16px;
+      margin-bottom:20px;
       }
     
     .twitter-btn{
