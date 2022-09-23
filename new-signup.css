@@ -138,6 +138,9 @@ input{
     .name-inp placeholder{
         margin-left: 100px;
     }
+  br{
+    display:none;
+  }
     #form{
         width: 86vw;
         margin: 0 20px;
