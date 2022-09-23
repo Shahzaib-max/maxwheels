@@ -147,7 +147,7 @@ input{
         width: 75vw;
         margin: ;
         text-align: c;
-        margin: 32px auto 32px auto;
+        margin: 20px auto 20px auto;
         padding: 0 16px;
       }
     
@@ -174,7 +174,7 @@ input{
     width: 75vw;
     margin: ;
     /* text-align: c; */
-    margin: 32px auto 0 auto;
+    margin: 20px auto 0 auto;
     padding: 0 16px;
   
     }
